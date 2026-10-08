@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://emmaisalon.se/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://emmaisalon.se/fransar/</loc><lastmod>2026-10-03</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://emmaisalon.se/</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://emmaisalon.se/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emmaisalon.se/en/"/>
+  </url>
+  <url>
+    <loc>https://emmaisalon.se/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://emmaisalon.se/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emmaisalon.se/en/"/>
+  </url>
+  <url>
+    <loc>https://emmaisalon.se/fransar/</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://emmaisalon.se/fransar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emmaisalon.se/en/lashes/"/>
+  </url>
+  <url>
+    <loc>https://emmaisalon.se/en/lashes/</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://emmaisalon.se/fransar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emmaisalon.se/en/lashes/"/>
+  </url>
 </urlset>

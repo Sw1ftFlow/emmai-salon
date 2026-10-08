@@ -138,3 +138,8 @@
   @media (min-width:861px) and (max-width:1100px) {
     .menu { gap:18px; font-size:.72rem; letter-spacing:.08em; }
   }
+  .lang { display:flex; align-items:center; gap:6px; font-size:.72rem; letter-spacing:.14em; font-weight:600; }
+  .lang a { opacity:.55; } .lang a:hover { opacity:1; }
+  .lang a.on { opacity:1; color:var(--rose); }
+  .lang i { opacity:.35; font-style:normal; }
+  @media (max-width:860px) { nav .wrap { gap:12px; } .m-link { margin-left:auto; white-space:nowrap; letter-spacing:.1em; } .logo small { white-space:nowrap; } .lang { letter-spacing:.08em; } }
