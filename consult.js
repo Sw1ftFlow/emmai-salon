@@ -35,3 +35,8 @@
     }).then(function () { btn.disabled = false; });
   });
 })();
+
+(function () {
+  var v = document.querySelector('.hero-video');
+  if (v && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+})();
