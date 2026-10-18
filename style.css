@@ -32,7 +32,7 @@
   .arch { position:relative; padding:0 0 30px 30px; }
   .arch::before { content:""; position:absolute; top:-14px; right:14px; bottom:14px; left:16px; border:1px solid var(--rose-deep); border-radius:260px 260px 0 0; opacity:.6; }
   .arch img, .arch video { display:block; width:100%; height:auto; aspect-ratio:696/972; object-fit:cover; border-radius:240px 240px 0 0; position:relative; }
-  .tag { display:flex; justify-content:space-between; align-items:center; gap:14px; margin:0 0 22px 30px; background:var(--rose); color:var(--ink); padding:12px 18px; }
+  .tag { display:flex; justify-content:space-between; align-items:center; gap:14px; margin:-14px 0 0 30px; background:var(--rose); color:var(--ink); padding:12px 18px; }
   .tag small { font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; font-weight:600; }
   .tag b { font-family:"Cormorant Garamond",serif; font-size:1.4rem; line-height:1.1; }
   .arch-caption { display:flex; justify-content:space-between; align-items:center; margin-top:16px; font-size:.7rem; letter-spacing:.3em; color:#bfaea8; }
