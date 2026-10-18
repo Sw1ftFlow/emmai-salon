@@ -4,7 +4,15 @@
 
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[data-lead]');
-    if (a) lead(a.getAttribute('data-lead'));
+    if (!a) return;
+    lead(a.getAttribute('data-lead'));
+    // On phones, open the Instagram app directly; fall back to the web profile if the app isn't installed.
+    if (a.getAttribute('data-lead') === 'Instagram' && /iPhone|iPad|Android/i.test(navigator.userAgent)) {
+      e.preventDefault();
+      var t = setTimeout(function () { location.href = a.href; }, 1200);
+      document.addEventListener('visibilitychange', function () { if (document.hidden) clearTimeout(t); });
+      location.href = 'instagram://user?username=emmai.pmu';
+    }
   });
 
   var form = document.getElementById('consult-form');
