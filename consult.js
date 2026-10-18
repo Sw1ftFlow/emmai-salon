@@ -9,6 +9,12 @@
 
   var form = document.getElementById('consult-form');
   if (!form) return;
+  var toggle = document.getElementById('consult-toggle');
+  toggle.addEventListener('click', function () {
+    form.hidden = !form.hidden;
+    toggle.setAttribute('aria-expanded', String(!form.hidden));
+    if (!form.hidden) form.querySelector('input[name=name]').focus();
+  });
   var msg = form.querySelector('.form-msg');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
