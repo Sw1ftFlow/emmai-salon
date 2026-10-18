@@ -134,8 +134,10 @@
     <input type="hidden" name="subject" value="Ny konsultationsförfrågan – emmaisalon.se">
     <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
     <input name="name" placeholder="Namn" required autocomplete="name">
-    <input name="contact" placeholder="Telefon eller e-post" required autocomplete="email tel">
+    <input name="phone" type="tel" placeholder="Telefon" required autocomplete="tel">
+    <input name="email" type="email" placeholder="E-post" required autocomplete="email">
     <textarea name="message" rows="3" placeholder="Vad funderar du på? (valfritt)"></textarea>
+    <small>Vill du skicka bilder? Skicka dem gärna via WhatsApp eller Instagram.</small>
     <button class="btn arrow" type="submit">Skicka förfrågan</button>
     <small>Vi använder dina uppgifter endast för att kontakta dig om din förfrågan.</small>
     <p class="form-msg" role="status"></p>
