@@ -102,7 +102,8 @@
     <h1>Lip Blush<br>i Göteborg.<em>Naturligt du.</em></h1>
     <p>Sculpted Lip Blush ger läpparna mjuk färg, tydlig kontur och ett fylligare intryck – utan fillers. Utförs av en certifierad PMU-artist utbildad i Vietnam, med en nästan smärtfri teknik.</p>
     <div class="actions">
-      <a class="btn arrow" href="https://www.bokadirekt.se/places/emmai-salon-136025">Se pris &amp; lediga tider</a>
+      <a class="btn arrow" href="#konsultation">Gratis konsultation</a>
+      <a class="btn ghost" href="https://www.bokadirekt.se/places/emmai-salon-136025">Se pris &amp; boka</a>
       <a class="link" href="#processen">Så går det till ↓</a>
     </div>
     <div class="note">Läs omdömen och boka online<br>dygnet runt på Bokadirekt</div>
@@ -117,6 +118,30 @@
 </header>
 
 <div class="marquee"><span>LIP BLUSH</span><i>✦</i><span>PERMANENT MAKEUP</span><i>✦</i><span>UTAN FILLERS</span><i>✦</i><span>NATURLIGT DU</span></div>
+
+<section class="consult" id="konsultation"><div class="wrap">
+  <span class="eyebrow">Gratis konsultation</span>
+  <h2>Få din gratis<em>online-konsultation.</em></h2>
+  <p class="lead">Osäker på färg, form eller om Lip Blush passar dig? Skicka en fråga så svarar Emma personligen – helt förpliktelsefritt.</p>
+  <div class="actions">
+    <a class="btn arrow" href="https://ig.me/m/emmai.pmu" data-lead="Instagram">Skriv på Instagram</a>
+    <a class="btn ghost" href="https://wa.me/46728897119?text=Hej%21%20Jag%20vill%20ha%20en%20gratis%20konsultation%20om%20Lip%20Blush." data-lead="WhatsApp">Skicka meddelande</a>
+    <a class="btn ghost" href="tel:+46728897119" data-lead="Phone">Ring 072-889 71 19</a>
+  </div>
+  <p class="or">Eller lämna dina uppgifter så hör vi av oss:</p>
+  <form id="consult-form" novalidate data-ok="Tack! Vi hör av oss så snart som möjligt." data-err="Något gick fel. Försök igen eller skriv till oss på Instagram.">
+    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+    <input type="hidden" name="subject" value="Ny konsultationsförfrågan – emmaisalon.se">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+    <input name="name" placeholder="Namn" required autocomplete="name">
+    <input name="contact" placeholder="Telefon eller e-post" required autocomplete="email tel">
+    <textarea name="message" rows="3" placeholder="Vad funderar du på? (valfritt)"></textarea>
+    <button class="btn arrow" type="submit">Skicka förfrågan</button>
+    <small>Vi använder dina uppgifter endast för att kontakta dig om din förfrågan.</small>
+    <p class="form-msg" role="status"></p>
+  </form>
+</div></section>
+
 
 <section id="lip-blush"><div class="wrap">
   <div class="split-head">
@@ -206,7 +231,8 @@
 </div></section>
 
 <footer><div class="wrap"><span class="logo" style="font-size:1.2rem">Emmai Salon</span><span>Lip Blush &amp; permanent makeup i Göteborg · <a href="/fransar/" style="color:var(--rose)">Fransar &amp; bryn</a> · <a href="/en/" lang="en" style="color:var(--rose)">English</a></span><a href="#">Till toppen ↑</a></div></footer>
-<a class="btn arrow sticky" href="https://www.bokadirekt.se/places/emmai-salon-136025">Boka Lip Blush</a>
+<a class="btn arrow sticky" href="#konsultation">Gratis konsultation</a>
 <script src="/consent.js" defer></script>
+<script src="/consult.js" defer></script>
 </body>
 </html>
