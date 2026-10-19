@@ -120,7 +120,7 @@
   }
 
   .menu a.active { color:var(--rose); }
-  .m-link { display:none; font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; font-weight:500; border-bottom:1px solid var(--rose); padding-bottom:3px; }
+  .m-link { display:none; font-size:.55rem; letter-spacing:.1em; text-transform:uppercase; font-weight:500; border-bottom:1px solid var(--rose); padding-bottom:3px; }
   .tcard figure { position:relative; margin-bottom:22px; }
   .tcard img { width:100%; height:auto; aspect-ratio:5/4; object-fit:cover; display:block; }
   .tcard .num { position:absolute; top:14px; left:14px; width:34px; height:34px; border-radius:50%; background:rgba(29,22,20,.8); display:grid; place-items:center; font-size:.75rem; font-weight:600; }
