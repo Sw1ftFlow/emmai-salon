@@ -46,5 +46,15 @@
 
 (function () {
   var v = document.querySelector('.hero-video');
-  if (v && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+  if (!v) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); return; }
+  v.muted = true; v.defaultMuted = true; v.setAttribute('playsinline', '');
+  function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  play();
+  v.addEventListener('loadeddata', play);
+  v.addEventListener('canplay', play);
+  // iOS Low Power Mode blocks autoplay until the first touch.
+  ['touchstart', 'click', 'scroll'].forEach(function (ev) {
+    window.addEventListener(ev, function once() { if (v.paused) play(); window.removeEventListener(ev, once); }, { passive: true });
+  });
 })();
